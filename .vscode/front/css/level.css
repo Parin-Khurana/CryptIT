@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: vol7;
+  src: url('../fonts/Xolonium-Regular.ttf');
+}
+
+@font-face {
+  font-family: vol7bold;
+  src: url('../fonts/Xolonium-Bold.ttf');
+}
+
+@font-face {
+  font-family: Akira;
+  src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+@font-face {
+  font-family: Enox;
+  src: url('../fonts/WarriotTech-rvdRp.ttf');
+}
+
+@font-face {
+  font-family: EnoxI;
+  src: url('../fonts/WarriotTechItalic-YqOoa.ttf');
+}
+
+@font-face {
+  font-family: Discopia;
+  src: url('../fonts/Discopia\ Regular.ttf');
+}
+
+
+@font-face {
+  font-family: Kernel;
+  src: url('../fonts/Kernel-Light.otf');
+}
+
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-black.otf');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-medium.otf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-light.otf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+
+body{
+    background-size: 35rem; /* or 'contain' or 'auto' */
+    background-repeat: no-repeat;
+
+    background-image: url(../images/noisebg2.png);
+    background-size: 100vw 100vh;
+    height: 98vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Orbitron', monospace;
+    padding: 3rem 7rem;
+    margin-bottom: 3rem;
+
+
+    
+}
+.container{
+    border: 1px white solid;
+    height: 90%;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 0 5px white, 0 0 5px white; 
+}
+.navbar{
+    color: black;
+    background-color: white;
+    width: max-content;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem;
+    padding-left: 1rem;
+    width: max-content;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.maincontent{
+  gap: 3.5rem;
+  height: 77vh;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 0  ;
+}
+.questionside{
+    border: 1px solid white ;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid{
+  width: 90%;
+  margin-top: 2rem;
+}
+.grid-wrapper {
+  padding: 10px;
+  max-width: 100vw;
+  overflow-x: auto;
+  stroke-width: 2px;
+stroke: #FFF;
+filter: drop-shadow(0px 0px 2px #FFF);
+}
+
+.grid-table {
+  border-collapse: collapse;
+  color: white;
+  width: 100%;
+  min-width: 600px; /* or whatever minimum makes sense for your columns */
+  table-layout: fixed;
+  border: 1px solid white;
+  
+}
+
+.grid-table th,
+.grid-table td {
+  font-size: .9rem;
+  width: .1rem;
+  height: 6.2vh;
+  border: 1px solid white;  
+  font-weight: 300;
+
+  
+}
+.grid-table th {
+  border: none;
+
+  font-weight: normal;
+}
+
+.teams{
+  display: flex;
+    height: 22%;
+    align-items: center;
+    border: 1px solid #FFF;
+    margin:2rem;
+}
+.position{
+  border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 8px 0px #FFF;
+width: 8%;
+height: 100%;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #000;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.teampfp{
+  margin: 1rem;
+  background: #D9D9D9;
+  height: 20%;
+  aspect-ratio: 1;
+  height: 65%;
+}
+.participantname{
+  color: #FFF;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 30;
+line-height: normal;
+}
+
+.text{
+  margin-left: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.points, .teamname{
+  font-weight: 300;
+}
+
+.question{
+  color: #FFF;
+font-family: "Roboto Mono";
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin: 2rem;
+}
+
+.level{
+font-family: 'Orbitron';
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+
+border: 1px solid #FFF;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 35%;
+text-align: center; 
+color: black;
+border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 13px 0px #FFF;
+padding: .8rem 2rem;
+}
+.inputfield{
+  display: flex;
+  justify-content: space-between;
+}
+.detailsinput{
+    pointer-events: all!important;
+    background-color: transparent;
+    border: none;
+    font-family: 'Orbitron';
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    border: none;
+    margin: .5rem;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking {
+  animation: blink 1s step-start infinite;
+  border: none
+}

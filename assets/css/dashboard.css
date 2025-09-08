@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: vol7;
+  src: url('../fonts/Xolonium-Regular.ttf');
+}
+
+@font-face {
+  font-family: vol7bold;
+  src: url('../fonts/Xolonium-Bold.ttf');
+}
+
+@font-face {
+  font-family: Akira;
+  src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+@font-face {
+  font-family: Enox;
+  src: url('../fonts/WarriotTech-rvdRp.ttf');
+}
+
+@font-face {
+  font-family: EnoxI;
+  src: url('../fonts/WarriotTechItalic-YqOoa.ttf');
+}
+
+@font-face {
+  font-family: Discopia;
+  src: url('../fonts/Discopia\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-black.otf');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-medium.otf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-light.otf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+
+body{
+    pointer-events: none;
+    background-size: 35rem; /* or 'contain' or 'auto' */
+    background-repeat: no-repeat;
+    background-position: center calc(50% + 70px);
+    background-color: black;
+    background-image: url(../asets/images/noisebg.png);
+    height: 98vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Space Grotesk', monospace;
+    font-weight: 300;
+    padding: 3rem 7rem;
+    padding-bottom: 0px;
+    padding-top: 0;
+
+    
+}
+
+#bgimg{
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 35rem;
+}
+
+.container{
+    margin-top: 3rem;
+}
+.navbar{
+  pointer-events: all;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 13px 0px #FFF;
+padding: .55rem 5rem;
+}
+.navbar>span{
+    cursor: pointer;
+    color: #000;
+text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.55);
+font-family: "Roboto Mono";
+font-size:1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.teamdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    gap: 11rem;
+    padding-bottom: 0;
+}
+
+.avatar{
+    color: #FFF;
+font-family: 'Orbitron';
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+
+border: 1px solid #FFF;
+display: flex;
+align-items: center;
+justify-content: center;
+aspect-ratio: 1;
+width: 20%;
+height: 20%;
+text-align: center;
+
+}
+
+.maindetails{
+        color: #FFF;
+color: #FFF;
+text-shadow: 0px 0px 8px #FFF;
+font-family: 'Orbitron';
+font-size: 1.7rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+border: 1px solid #FFF;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+aspect-ratio: 2.5;
+width: 50%;
+gap: 2.35rem;
+padding-left: 1.7rem;
+}
+.bottomdetails{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 1rem;
+    padding: 2rem;
+    gap: 11rem;
+}
+
+.level{
+font-family: 'Orbitron';
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 300;
+
+border: 1px solid #FFF;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 16%;
+text-align: center; 
+color: black;
+border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 13px 0px #FFF;
+padding: .8rem 2rem;
+}
+
+.aboutguidelines{
+  pointer-events: all;
+display: flex;
+flex-direction: column;
+width: 52%;
+gap: 2.35rem;
+}
+.arrowbox{
+    transform: rotate(90deg);
+    background-color: white;
+    padding: .8rem;
+    border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 8px 0px #FFF;
+}
+.arrowbox>img{
+    height: 2rem;
+}
+.guidelinesdetails{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+text-shadow: 0px 0px 8px #FFF;
+
+}
+.textt{
+    margin-left: 2.5rem;
+    font-family: 'Orbitron';
+font-size: 2.1rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.bottomright{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-radius: .5rem;
+    padding-top: .3rem;
+    padding-left: 1rem;
+
+}
+.bottomdiv{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 35rem;
+}
+.chineesetext>p{
+    font-size: .7rem;
+    font-weight: normal;
+    opacity: .8;
+    margin: 0;
+    padding: 0;
+}
+.bottomdiv>img{
+    height: 8.5rem;
+}
+
+spline-viewer {
+    pointer-events: none;
+    position: absolute;
+    left: 0; 
+    z-index: -10;
+    transform: scale(1.5);
+    top: -2.5rem;
+    opacity: .5;
+}
+
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  width:500px;
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease;
+  opacity: 0;
+  margin-left: 5rem;
+  font-size: 1rem;
+  color: #ddd;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.dropdown.open .dropdown-content {
+  max-height: 300px; /* or auto if you prefer */
+  opacity: 1;
+  width:1000rem;
+  padding-top: 0.5rem;
+
+}
+.arrow{
+animation: anti-rotate 0.5s ease forwards;
+}
+.arrow.rot{
+animation: rotate 0.5s ease forwards;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-90deg);
+  }
+}
+@keyframes anti-rotate{
+  0%{
+    transform: rotate(-90deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.alink{
+  color: black;
+  text-decoration: none;
+  pointer-events: all;
+}

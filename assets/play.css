@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Mouse';
+    src: url('mouse-webfont.woff') format('woff'),
+        url('mouse-webfont.woff2') format('woff2');
+}
+
+body {
+    background-color: #0F0F0F;
+    color: #E6E3DB;
+    font-family: 'Mouse', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.level1 {
+    color: #549DC6;
+    text-shadow: 5px 3px 0px #E6E3DB;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lvl {
+    background: rgba(255, 0, 0, 0.504);
+    width: 300px;
+    top: -10%;
+    height: 7vh;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.questionContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.522);
+    width: 60vw;
+    border-radius: 20px;
+    height: 50vh;
+    top: 0;
+}
+
+.inputGrey {
+    width: 1050px;
+    height: calc(100% + 15px);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.skeletonDivs{
+    display: block;
+    opacity: 1;
+    z-index: 100000;
+    background: linear-gradient(
+      90deg,
+      #27272700 0,
+      #272727 4rem,
+      #27272700 8rem
+    ),
+    #1b1b1b;
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: -50% 0;
+  animation: shine 2s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+  transition: all 150ms ease-in-out;
+}
+
+  @keyframes shine {
+    to {
+      background-position: 150% 0;
+    }
+  }
+
+.btnGrey {
+    position: absolute;
+    right: -2vw;
+    transform: translateX(100%);
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    z-index: 10000;
+}
+
+::placeholder {
+    font-family: 'Mouse', sans-serif;
+    color: #E6E3DB;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #E6E3DB;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.5rem;
+}
+
+#play{
+    height: 2rem;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0vh 20px 0 20px;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 60px;
+}
+
+main h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.questionText {
+    font-size: 2.5rem;
+    margin: 30px 0;
+    width: 60vw;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer-box {
+    margin-top: auto;
+    padding-bottom: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+input[type="text"] {
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 1000px;
+    background-color: #0F0F0F;
+    color: #E6E3DB;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Mouse', sans-serif;
+}
+
+
+.whiteCorener1 {
+    position: absolute;
+    width: 9px;
+    left: -3px;
+    top: -3px;
+}
+
+.whiteCorener2 {
+    position: absolute;
+    width: 9px;
+    right: -3px;
+    top: -3px;
+    transform: rotate(90deg);
+}
+
+.whiteCorener3 {
+    position: absolute;
+    width: 9px;
+    right: -3px;
+    bottom: -3px;
+    transform: rotate(180deg);
+}
+
+.whiteCorener4 {
+    position: absolute;
+    width: 9px;
+    left: -3px;
+    bottom: -3px;
+    transform: rotate(270deg);
+}
+
+
+.inputContainer {
+    border: 3px solid #E6E3DB;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.submit-btn, button#submit-btn {
+    font-family: 'Mouse', sans-serif;
+    background-color: #549DC6;
+    border: 3px solid #549DC6;
+    color: #E6E3DB;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 2vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.submit-btn:hover, button#submit-btn:hover {
+    background-color: #3b7da1;
+}
+
+#feedback, #feedback-1, #feedback-2 {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}

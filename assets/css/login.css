@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: vol7;
+  src: url('../fonts/Xolonium-Regular.ttf');
+}
+
+@font-face {
+  font-family: vol7bold;
+  src: url('../fonts/Xolonium-Bold.ttf');
+}
+
+@font-face {
+  font-family: Akira;
+  src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+@font-face {
+  font-family: Enox;
+  src: url('../fonts/WarriotTech-rvdRp.ttf');
+}
+
+@font-face {
+  font-family: EnoxI;
+  src: url('../fonts/WarriotTechItalic-YqOoa.ttf');
+}
+
+@font-face {
+  font-family: Discopia;
+  src: url('../fonts/Discopia\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-black.otf');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-medium.otf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron/orbitron-light.otf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+
+body{
+    background-size: 35rem; /* or 'contain' or 'auto' */
+    background-repeat: no-repeat;
+
+    background-image: url(../images/noisebg2.png);
+    background-size: 100vw 100vh;
+    height: 98vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Space Grotesk', monospace;
+    font-weight: 300;
+    padding: 3rem 7rem;
+    padding-bottom: 0px;
+    padding-top: 0;
+
+    
+}
+
+#bgimg{
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 35rem;
+}
+.topdiv{
+    margin-top: 3rem;
+z-index: 20;
+    box-shadow: 0 0 0 .5px white;
+    display: flex;
+    font-size: 15px;
+}
+.subdiv{
+    
+    z-index: 20;
+    flex:1;
+    box-shadow: 0  0 0 .5px white;
+}
+.sidediv{
+    padding-left:1rem ;
+    padding-left:1rem ;
+}
+.midiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.midiv>h1{
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: normal;
+}
+.subdiv>p{
+    margin-top: .3rem;
+    font-size: .8rem;
+}
+
+.sidediv>h1{
+    font-size:2rem;
+    margin-bottom: 0;
+}
+.cryptit{
+    pointer-events: none;
+}
+.centertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    pointer-events: none;
+    z-index: 20;
+}
+.centertext>span{
+    letter-spacing: .5rem;
+font-size: 10rem;
+    z-index: 20;
+
+font-family: "Akira";
+}
+
+.centertext>button{
+    padding: .7rem 5.7rem;
+    background-color: white;
+    pointer-events: all !important;
+
+}
+.cineees>p{
+    font-size: .7rem;
+    font-weight: normal;
+    
+}
+.cineees{
+    margin-top: 2.2rem;
+    opacity: .8;
+}
+.bottomdiv{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 35rem;
+}
+.bottomdiv>p{
+    font-size: .7rem;
+    font-weight: normal;
+    opacity: .8;
+    margin: 0;
+    padding: 0;
+}
+.bottomdiv>img{
+    height: 8.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.slanted-box {
+      font-weight: bold;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+        margin-top: 1.8rem;
+      text-align: center;
+      aspect-ratio: 8;
+      height: 35px;
+      font-family: "Tomorrow";
+      position: relative;
+      background: white;
+      color: black;
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      /* Proper slanted bottom-left corner */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    pointer-events: all;
+    width: 39vh;
+    height: 9.2vh;
+    border: none;
+    }
+.startarrow {
+      width: 1.7rem;
+      position: absolute;
+      font-size: 2rem;
+      right: 2.6rem;}
+
+.slanted-box:hover{
+    cursor: pointer;
+}
+
+.vol7{
+    display: flex;
+    font-family: "vol7bold";
+    font-style: italic;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: start;
+    letter-spacing: .2rem;
+}
+
+.brleft{
+    text-align: center;
+    letter-spacing: .1rem;
+    padding-top: 1rem;
+        opacity: .8;
+}
+.brleft>img{
+
+height: 2rem;
+font-family: 'Montserrat';
+}
+.brleft>p{
+    margin: 0;
+}
+
+.bottomright{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-radius: .5rem;
+    padding-top: .3rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.brright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.brright>img{
+    aspect-ratio: 17;
+    height: .5rem;
+}
+.ghatiya {
+  position: relative;
+  clip-path: polygon(0 40%,55% 40%,75% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  z-index: 1;
+  background-color: black;
+}
+
+/* Border using ::before */
+.ghatiya-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* This is the "border" color */
+  clip-path: polygon(1% 38%,55% 38%,74% 0, 99% 0, 99% 100%,  1% 100%);
+  z-index: 0;
+  transform: scale(1.03); /* Make it slightly larger to appear as border */
+}
+
+.bricons{
+
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+    padding: 1.25rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.bricons>img{
+    transform: scale(1.2);
+}
+
+.ghatiya-wrapper{
+    position: relative;
+}
+
+spline-viewer {
+    pointer-events: all;
+    position: absolute;
+    left: 0; 
+    z-index: 0;
+    transform: scale(1);
+    animation: globe 4s ease-out forwards;
+    }
+
+    .zindexx{
+        z-index: 5;
+    }   
+
+
+.loginborder {
+    position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.logintext{
+        pointer-events: all!important;
+    display: flex;
+}
+.uavatar{
+    cursor: pointer;
+    width: 28rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+font-family: Orbitron;
+font-size: 2rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+border-right: 0.7px solid rgba(255, 255, 255, 0.60);
+}
+.inputfield{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.loginupperdiv{
+  margin-top: 4rem;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+}
+.mainlogin{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+text-shadow: 0px 0px 8px #FFF;
+width: 70%;
+font-family: 'Orbitron';
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding: 2.4rem;
+padding-top: 2rem;justify-content: space-between;
+height: 25vh;
+}
+
+.detailsinput{
+    pointer-events: all!important;
+    background-color: black;
+    border: none;
+    font-family: 'Orbitron';
+    width: 30rem;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0px 0px 5px #FFF;
+    font-weight: 300;
+    border: none;
+  border: 0px solid;
+}
+
+.detailsinput {
+  color: white;
+  background-color: black;
+}
+
+.detailsinput::placeholder {
+  color: white;
+     animation: blink 1s infinite;
+     font-size: 1.;
+}
+
+/* Vendor prefixes for better compatibility */
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.loginclippath{
+
+  position: absolute;
+  top: .7rem;
+  left: 0;
+  width: 100%;
+  height: 83%;
+  background-color: white; /* This is the "border" color */
+clip-path: polygon(0 12%,5% 7%, 15% 7%,17.5% 2%, 97.5% 2%,100% 7%, 100% 92%, 96.5% 100%,80% 100%,78% 96%, 40% 96%, 38% 100%,5% 100%, 0 96%);
+
+  z-index: 0;
+  transform: scale(.8); /* Make it slightly larger to appear as border */
+
+}
+.loginupperdiv{
+    position: relative;
+}
+
+.logindiv{
+    pointer-events: all!important;
+    font-family: 'Orbitron';
+    font-weight: 300;
+    width: 80%;
+    margin-top: 4rem;
+    display: flex;
+    background-color: black;
+    clip-path: polygon(.25% 10%,5% 5%, 15% 5%,17.5% 0, 97.5% 0,99.75% 5%, 99.75% 92%, 96.5% 100%,80% 100%,78% 96%, 40% 96%, 38% 100%,5% 100%, .25% 96%);
+    z-index: 10;
+
+}
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Only blink if input has .blinking class AND is not focused */
+.blinking:not(:focus)::placeholder {
+  animation: blink 1s step-start infinite;
+}
+
+.blinking {
+  animation: blink 1s step-start infinite;
+  border: none
+}
+
+.detailsinput:focus {
+  outline: none;
+  border: none;}

@@ -1,0 +1,89 @@
+
+
+<html>
+    
+    <head>
+        <title><%= pageTitle%></title>
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/353b79b2ea9db02690b55e55fb094e08?family=Bold" rel="stylesheet" type="text/css"/>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.7/build/spline-viewer.js"></script>
+    </head>
+    <body >
+        <spline-viewer url="https://prod.spline.design/Ud9Exp3rGMSSh6Ed/scene.splinecode"></spline-viewer>
+        <div  class="container">
+            <div class="navbar">
+                <span><a class="alink" href="/">CRYPT.IT</a></span>
+                <span><a class="alink" href="/problems">PLAY</a></span>
+                <span><a class="alink" href="/leaderboard">LEADERBOARD</a></span>
+                <span><a class="alink" href="/credits">CREDITS</a></span>
+            </div>
+
+
+        <div class="teamdetails">
+            <div class="avatar">
+                <span>Error!<br><br> Avatar Not Found</span>
+            </div>
+            <div class="maindetails">
+            <div class="Details"><span>Name: <%= name %></span></div>
+            <div class="Details"><span>Discord ID: --</span></div>
+            <div class="Details"><span>Email: --</span></div>
+            <div class="Details"><span>Team Name: <%= teamName %></span></div>
+            </div>
+
+        </div>
+
+        
+        <div class="bottomdetails">
+            <div class="level">
+                <div> <a class="alink" href="/problems">LEVEL: <%= score /10%>/12</a></div>
+                <div class="icons">
+                    <img src="assets/images/filter.svg">
+                    <img src="assets/images/expand.svg">
+                    <img src="assets/images/ellipsis-horizontal.svg">
+                </div>
+            </div>
+            <div class="aboutguidelines">
+                <div class="guidelinesdetails dropdown">
+                    <div class="dropdown-header" onclick="window.location.href='https://docs.google.com/document/d/1iSegxfTg71PkelqvSgHsvWoVCOlpjLbMbZjhmnIxde0/edit?usp=sharing'">
+                        <div class="arrowbox">
+                            <img class="arrow" src="/assets/images/arrow.svg" >
+                        </div>
+                        <div class="textt">About The Event</div>
+                    </div>
+
+                </div>
+
+                <div class="guidelinesdetails dropdown">
+                    <div class="dropdown-header" onclick="window.location.href='https://docs.google.com/document/d/1nw0ZL-CGyL5Y2Kmz9Gug4p8mbbPpqsCBVRxE6h4UwHk/edit?usp=sharing'">
+                        <div class="arrowbox">
+                            <img class="arrow" src="/assets/images/arrow.svg">
+                        </div>
+                        <div class="textt">Rules</div>
+                    </div>
+                </div>
+
+                <div class="guidelinesdetails dropdown">
+                    <div class="dropdown-header" onclick="window.location.href='https://docs.google.com/document/d/10-dF1OJ08wRlPGcjXjOqrtCrB4HrQ8RNVAs1UQUaF1U/edit?usp=sharing'">
+                        <div class="arrowbox">
+                            <img class="arrow" src="/assets/images/arrow.svg">
+                        </div>
+                        <div class="textt">Guidelines</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                <div class="bottomdiv">
+                    <div class="chineesetext">
+            <p>在赛博朋克的世界里，高科技和黑暗势力共存。人们身处于发达<br>的城市中，但生活却一直受到巨大的限制和控制。虚拟世界和现<br>实世界之间的界限愈来愈模糊，让人们感到困惑和迷失。</p>
+</div>
+            <div class="bottomright">
+                <img src="assets/images/stripes.svg">
+            </div>
+            </div>
+        </div>
+
+    </body>
+</html>

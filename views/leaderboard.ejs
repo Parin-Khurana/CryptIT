@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaderboard - Crypt.IT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Orbitron:wght@400..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    @font-face {
+      font-family: vol7;
+      src: url('assets/fonts/Xolonium-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: vol7bold;
+      src: url('../fonts/Xolonium-Bold.ttf');
+    }
+
+    @font-face {
+      font-family: Akira;
+      src: url('../fonts/Akira\ Expanded\ Demo.otf');
+    }
+
+    @font-face {
+      font-family: Kernel;
+      src: url('../fonts/Kernel-Light.otf');
+    }
+
+    @font-face {
+      font-family: 'Orbitron';
+      src: url('assets/fonts/Orbitron/orbitron-black.otf');
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Orbitron';
+      src: url('assets/fonts/Orbitron/orbitron-bold.otf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Orbitron';
+      src: url('assets/fonts/Orbitron/orbitron-medium.otf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Orbitron';
+      src: url('assets/fonts/Orbitron/orbitron-light.otf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    body {
+      background-size: 35rem;
+      background-repeat: no-repeat;
+      background-position: center calc(50% + 70px);
+      background-color: black;
+      height: 98vh;
+      overflow: hidden;
+      color: white;
+      font-family: 'Orbitron', monospace;
+      padding: 3rem 7rem;
+      margin-bottom: 3rem;
+      pointer-events: none;
+    }
+
+    .container {
+      pointer-events: all;
+      border: 1px white solid;
+      height: 90%;
+      width: 100%;
+      padding: 0;
+      box-shadow: 0 0 5px white, 0 0 5px white;
+    }
+
+    .navbar {
+      color: black;
+      background-color: white;
+      width: max-content;
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+      justify-content: space-between;
+      padding: .4rem 1rem;
+      font-size: 18px;
+      font-weight: 300;
+      pointer-events: all;
+      cursor: pointer;
+    }
+
+    .teams {
+      display: flex;
+      height: 10%;
+      align-items: center;
+      border: 1px solid #FFF;
+      box-shadow: 0px 0px 7px 0px #FFF;
+      flex-shrink: 0;
+    }
+
+    .position {
+      border: 1px solid #FFF;
+      background: #FFF;
+      box-shadow: 0px 0px 8px 0px #FFF;
+      width: 3.5%;
+      height: 100%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .allteams {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      height: 87%;
+      max-height: 80vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: white #222;
+    }
+
+    .allteams::-webkit-scrollbar {
+      width: 10px;
+      background: #222;
+      border-radius: 8px;
+    }
+
+    .allteams::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 8px;
+      border: 2px solid #222;
+    }
+
+    .allteams::-webkit-scrollbar-thumb:hover {
+      background: white;
+    }
+
+    .teampfp {
+      margin: 1rem;
+      background: #D9D9D9;
+      height: 65%;
+      aspect-ratio: 1;
+    }
+
+    .participantname {
+      color: #FFF;
+      text-shadow: 0px 0px 8px #FFF;
+      font-size: 16px;
+      font-weight: 30;
+    }
+
+    .text {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-right: 1rem;
+    }
+
+    .points, .teamname {
+      font-weight: 300;
+    }
+
+    .teams.you {
+      border: 2px solid #00f0ff;
+      background-color: rgba(0, 240, 255, 0.08);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+      font-weight: bold;
+    }
+
+    .position.you {
+      background-color: #00f0ff;
+    }
+
+    .teams.first {
+      background-color: rgba(255, 215, 0, 0.15);
+      border-left: 4px solid #FFD700;
+    }
+
+    .teams.second {
+      background-color: rgba(192, 192, 192, 0.15);
+      border-left: 4px solid #C0C0C0;
+    }
+
+    .teams.third {
+      background-color: rgba(205, 127, 50, 0.15);
+      border-left: 4px solid #CD7F32;
+    }
+
+    .position.first { background-color: #FFD700 }
+    .position.second { background-color: #C0C0C0 }
+    .position.third { background-color: #CD7F32 }
+
+    .alink {
+      color: black;
+      text-decoration: none;
+      pointer-events: all;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar" onclick="window.location.href='/dashboard'">
+      <span>/CRYPTIT/LOGIN/LEADERBOARD</span>
+      <img src="assets/images/INDEX.svg">
+    </div>
+
+    <div class="allteams">
+      <% let rank = 1; %>
+      <% allUsers.forEach(doc => {
+        const isCurrentUser = doc.name === name && doc.score === score;
+        const rankClass = rank === 1 ? 'first' : rank === 2 ? 'second' : rank === 3 ? 'third' : '';
+        const youClass = isCurrentUser ? 'you' : '';
+      %>
+        <div class="teams <%= rankClass %> <%= youClass %>">
+          <div class="position <%= rankClass %> <%= youClass %>"><span>0<%= rank %></span></div>
+          <div class="teampfp"></div>
+          <div class="text">
+            <span class="participantname"><%= doc.name %></span>
+            <span class="points" style="display: flex; flex-direction: column;">
+              <%= doc.score %>
+              <% if (doc.reachTime) { %>
+                <span style="font-size: 0.7rem; color: #aaa; margin-top: 0.1rem;">
+                   <%= doc.reachTime %>
+                </span>
+              <% } %>
+            </span>
+          </div>
+        </div>
+      <% rank++; }); %>
+    </div>
+  </div>
+</body>
+</html>

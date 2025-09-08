@@ -1,0 +1,89 @@
+
+
+<html>
+    
+    <head>
+        <title>Parin Goat</title>
+        <link rel="stylesheet" href="/assets/css/login.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/353b79b2ea9db02690b55e55fb094e08?family=Bold" rel="stylesheet" type="text/css"/>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.7/build/spline-viewer.js"></script>
+    </head>
+    <body >
+
+        <div class="topdiv zindexx">
+            <div class="subdiv sidediv">
+                <h1>BYTE CLUB</h1>
+                <p>Established in 2017, Byte is the technology club of Bal Bharati Public School, Pitampura. We're a team of technology enthusiasts, our skills ranging from programming to designing.</p>
+            </div>
+            <div class="subdiv midiv">
+                <h1>11:59 pm 27 June</h1>
+                <h1>to</h1>
+                <h1>11:59 pm 28 June</h1>
+            </div>
+
+            <div class="subdiv sidediv">
+                <h1>CRYPT.IT</h1>
+                <p>People are constantly restricted and controlled in this developed city, where the boundary between virtual and real worlds becomes increasingly blurred. </p>
+            </div>
+        </div>
+        <form class="loginupperdiv" method="POST" action="/login" >
+            <div class="loginclippath"></div>
+        <div class="logindiv">
+            <div class="logintext">
+                <div class="uavatar">
+                    <span>Upload Avatar</span>
+                </div>
+                <div class="mainlogin">
+                    
+                    <div class="inputfield">
+                    <span>Team Password</span><input class="detailsinput" name="password" placeholder="|">
+                    </div>
+                    <div class="inputfield">
+                    <span>Team Email</span><input class="detailsinput"  placeholder="|" name="email">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Logi <img class="startarrow" src="assets/images/arrow.svg"></button>
+    </form>
+
+        <div class="bottomdiv">
+            <p>In the world of Cyberpunk, high technology and dark<br> forces coexist. People live in developed cities,<br> but their lives are constantly restricted and<br> controlled. The boundary between virtual and real<br> worlds is becoming increasingly blurred, leaving<br> people confused and lost.</p>
+
+            <div class="bottomright">
+                <img src="assets/images/stripes.svg">
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+const inputs = document.querySelectorAll(".detailsinput");
+
+function updateBlinkingLogic() {
+
+  inputs.forEach(input => input.classList.remove("blinking"));
+
+  for (let i = 0; i < inputs.length; i++) {
+    const input = inputs[i];
+    if (input.value.trim() === "" && !input.matches(":focus")) {
+      input.classList.add("blinking");
+      break;
+    }
+  }
+}
+
+
+inputs.forEach(input => {
+  input.addEventListener("input", updateBlinkingLogic);
+  input.addEventListener("focus", updateBlinkingLogic);
+  input.addEventListener("blur", updateBlinkingLogic);
+});
+
+updateBlinkingLogic();
+
+
+</script>
