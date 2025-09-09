@@ -56,4 +56,4 @@ http://localhost:8000
 
 - Frontend - [Ekansh Gupta](https://github.com/Ekansh-Coder5)
 
-- Design - [Pranav Kapur]()
+- Design - [Pranav Kapur](https://github.com/prnvkpr)
